@@ -15,8 +15,8 @@ in pom.xml file
 
 paste the "AllTests.xml" file name to  above uncomment code it should look like 
                             <configuration> <suiteXmlFiles>
-				                    <suiteXmlFile>AllTests.xml</suiteXmlFile> 
-					                  </suiteXmlFiles> </configuration>"
+			    <suiteXmlFile>AllTests.xml</suiteXmlFile> 
+			    </suiteXmlFiles> </configuration>"
 
 
 Now change in AllTests.xml file 
@@ -37,5 +37,19 @@ change the testcase names
 
 
 ********RUNNING TESTNG TEST SUITE************************
+Now right click on AllTest.xml file > run as > TestNG Suite
+
+
+***************** TestNG parameters **********************
+
+LINK: https://testng.org/#_parameters
+
+If you want run the test case as priority the use this:
+
+EX:  @Test(priority=1)
+
+If you want to skip test case
+
+EX: @Test(enabled = "false")
 
 
