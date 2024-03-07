@@ -1,0 +1,12 @@
+Selenium Dependencies Links
+
+https://maven.apache.org/plugins/maven-compiler-plugin/
+https://maven.apache.org/surefire/maven-surefire-plugin/
+https://mvnrepository.com/artifact/org.testng/testng
+https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+
+
+Download TestNG
+
+https://testng.org/testng-eclipse/download
+https://marketplace.eclipse.org/content/testng-eclipse
