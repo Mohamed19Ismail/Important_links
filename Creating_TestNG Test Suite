@@ -21,16 +21,16 @@ paste the "AllTests.xml" file name to  above uncomment code it should look like
 
 Now change in AllTests.xml file 
 change the testcase names
+
 <suite name="AllTests" verbose="1">
-  <test name="PositiveTests">
+  <test name= classname EX: "PositiveTests">
     <classes>
-       <class name="NoPackageTest"/>
+       <class name= packagename EX:"com.herokuapp.theinternet.PositiveTests"/>
     </classes>
   </test>
-  <test name="NegativeTests">
+  <test name= classname EX: "NegativeTests">
     <classes>
-      <class name="test.sample.ParameterSample"/>
-      <class name="test.sample.ParameterTest"/>
+      <class name= packagename EX:"com.herokuapp.theinternet.NegativeTests"/>
     </classes>
   </test>
 </suite>
