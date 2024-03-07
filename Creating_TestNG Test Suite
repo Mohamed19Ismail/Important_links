@@ -2,5 +2,35 @@ How to create TestNG Test Suite,   It will help us to execute all the test toget
 
 https://testng.org/#_testng_documentation
 
-First copy the example of xml file from below link
+Create TestSuites folder under /selenium-for-beginners/src/test/resources/"Here TestSuites folder should be created"  
+
+Create a file called AllTests.xml under /selenium-for-beginners/src/test/resources/TestSuites/"Here AllTests.xml file should be created" 
+copy the example of xml file from below link
 https://testng.org/#_testng_xml
+paste to AllTests.xml
+then go and uncomment this "<configuration> <suiteXmlFiles>
+				                    <suiteXmlFile>testng.xml</suiteXmlFile> 
+					                  </suiteXmlFiles> </configuration>"
+in pom.xml file
+
+paste the "AllTests.xml" file name to  above uncomment code it should look like 
+                            <configuration> <suiteXmlFiles>
+				                    <suiteXmlFile>AllTests.xml</suiteXmlFile> 
+					                  </suiteXmlFiles> </configuration>"
+
+
+Now change in AllTests.xml file 
+change the testcase names
+<suite name="AllTests" verbose="1">
+  <test name="PositiveTests">
+    <classes>
+       <class name="NoPackageTest"/>
+    </classes>
+  </test>
+  <test name="NegativeTests">
+    <classes>
+      <class name="test.sample.ParameterSample"/>
+      <class name="test.sample.ParameterTest"/>
+    </classes>
+  </test>
+</suite>
