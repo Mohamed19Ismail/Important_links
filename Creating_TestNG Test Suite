@@ -79,8 +79,13 @@ EX: @Parameters({ "first-name" })
 Change in XML file :
 
 <suite name="My suite">
-  <parameter name="first-name"  value="Cedric"/>
-  <test name="Simple example">
-  <!-- ... -->
+ <test name="NegativeUsernameTests">
+	  <parameter name="username"  value="Cedric"/>
+	  <parameter name="password"  value="Cedric"/>
+	  <parameter name="expectedmsg"  value="Cedric"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.NegativeTests"/>
+    </classes>
   </test>
-</suite>
+
+NOTE: - in method the parameter name should not be same as webelement name
