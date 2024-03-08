@@ -89,3 +89,10 @@ Change in XML file :
   </test>
 
 NOTE: - in method the parameter name should not be same as webelement name
+
+
+
+**********************TestNG Before and After Annotations*********************************
+
+Link: https://testng.org/#_annotations
+
