@@ -63,5 +63,24 @@ This gives you maximum flexibility in how you partition your tests and doesn't r
 EX: 
 @Test(groups = { "functest", "checkintest" }
 
+Once you mention groups parameter then you should put below code in xml file 
+<groups>
+    <run>
+      <include name="functest"/>
+    </run>
+  </groups>
 
+**************** PARAMETERS FROM TestSuite ************************************
 
+TestNG allows you to pass an arbitrary number of parameters to each of your tests using the `@Parameters` annotation.
+
+EX: @Parameters({ "first-name" })
+
+Change in XML file :
+
+<suite name="My suite">
+  <parameter name="first-name"  value="Cedric"/>
+  <test name="Simple example">
+  <!-- ... -->
+  </test>
+</suite>
