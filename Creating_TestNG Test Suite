@@ -52,4 +52,6 @@ If you want to skip test case
 
 EX: @Test(enabled = "false")
 
+**************** Using TESTNG and PARAMETERS **********************
+
 
