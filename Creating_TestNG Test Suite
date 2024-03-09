@@ -96,3 +96,15 @@ NOTE: - in method the parameter name should not be same as webelement name
 
 Link: https://testng.org/#_annotations
 
+
+
+
+**************************Exceptions in Selenium WebDriver***********************************
+
+What is an Exception?
+
+exception is an event which occurs during the execution of a program that 
+disrupts the normal flow of the program's instruction or in simple words, 
+any issue which makes your testcase stop in between the execution
+
+
